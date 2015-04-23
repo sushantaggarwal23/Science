@@ -1,0 +1,205 @@
+body {
+	border: 0px;
+	padding: 0px;
+}
+
+#banner {
+	height: 100px;
+	width: 500px;
+	float: right;
+	margin-right: 100px;
+	box-sizing: border-box;
+	font-size: 60px;
+	font-family: "Curlz MT";
+	animation-name: blinker;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+}
+
+@keyframes blinker{
+0% { opacity: 1.0; }
+25% { opacity: 0.0; }
+50% { opacity: 1.0; }
+75% { opacity: 0.0; }
+100% { opacity: 1.0; }
+}
+img {
+	border-radius: 50px;
+}
+
+#container {
+	margin-left: 60px;
+	margin-top: 50px;
+	height: 500px;
+	width: 500px;
+	border-radius: 250px;
+	border: 2px solid #808080;
+	position: relative;
+}
+
+#imgContainer {
+	margin-left: 60px;
+	margin-top: 0px;
+	height: 500px;
+	width: 500px;
+	border-radius: 250px;
+	position: absolute;
+	background-image: url('\images/grains.jpg');
+	opacity: .3;
+}
+.food {
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: #00007A;
+	color: white;
+	text-align: center;
+	padding-top: 35px;
+	position: absolute;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 1px 1px gray;
+	font-family: "Curlz MT";
+	font-size: 20px;
+}
+
+@keyframes example{
+from {
+	border-radius: 50px;
+	height: 100px;
+	width: 100px;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 1px 1px gray;
+}
+
+to {
+	border-radius: 60px;
+	height: 120px;
+	width: 120px;
+	padding-top: 50px;
+	background-color: #99003D;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 2px 2px gray;
+}
+
+}
+
+.newDim {
+	animation-name: example;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
+
+.newDim1 {
+	animation-duration: 1s;
+	animation-name: example;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
+.newDim2 {
+	animation-duration: 1.3s;
+	animation-name: example;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
+.newDim3 {
+	animation-duration: 1.7s;
+	animation-name: example;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
+#textBox {
+	position: absolute;
+	margin-top: -240px;
+	margin-left: 615px;
+	height: 40px;
+	width: 200px;
+	font-family: "Curlz MT";
+	visibility: hidden;
+	color: #FFA366;
+}
+
+#infoBox {
+	position: absolute;
+	margin-top: -180px;
+	margin-left: 650px;
+	height: 100px;
+	width: 500px;
+	font-family: "Curlz MT";
+	visibility: hidden;
+	color: #B2E0C2;
+}
+
+@keyframes slidein {
+from {
+	margin-left: 550px;
+	opacity: .2;
+}
+
+to {
+	text-shadow: 0 1px 0 #FF8533, 0 2px 0 #FF8533, 0 3px 0 #FF6600, 0 4px 0 #FF6600, 0 5px 0 #E65C00, 0 6px 1px #000, 0 0px 3px #000, 0 1px 3px #000, 0 3px 5px #000, 0 5px 10px #000, 0 5px 20px #000;
+	margin-left: 650px;
+	margin-top: -240px;
+	font-size: 40px;
+	opacity: 1;
+	visibility: visible;
+}
+
+}
+
+.textFade1 {
+	animation-duration: 1s;
+	animation-name: slidein;
+	animation-fill-mode: forwards;
+	animation-delay: .5s
+}
+
+.textFade2 {
+	animation-duration: 1s;
+	animation-name: slidein;
+	animation-fill-mode: forwards;
+	animation-delay: .65s
+}
+
+.textFade3 {
+	animation-duration: 1s;
+	animation-name: slidein;
+	animation-fill-mode: forwards;
+	animation-delay: 1.05s
+}
+@keyframes fadeIn {
+from {
+	transform: rotate(0deg);
+}
+
+to {
+	text-shadow: 0 1px 0 #66C285, 0 2px 0 #66C285, 0 3px 0 #33AD5C, 0 4px 0 #33AD5C, 0 5px 0 #19A347, 0 6px 1px #000, 0 0px 3px #000, 0 1px 3px #000, 0 3px 5px #000, 0 5px 10px #000, 0 5px 20px #000;
+	visibility: visible;
+	font-size: 40px;
+	transform: rotate(360deg);
+}
+
+}
+
+.addTextFadeIn1 {
+
+	animation-duration: .3s;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+	animation-delay: 1.3s
+}
+
+.addTextFadeIn2 {
+
+	animation-duration: .3s;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+	animation-delay: 1.4s
+}
+
+.addTextFadeIn3 {
+
+	animation-duration: .3s;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+	animation-delay: 1.8s
+}
